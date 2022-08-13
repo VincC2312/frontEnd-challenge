@@ -3,27 +3,20 @@
   margin: 0;
   padding: 0;
 }
-:root {
-  --very-dark-blue: hsl(216, 12%, 8%);
-  --white: hsl(0, 0%, 100%);
-  --medium-grey: hsl(216, 12%, 54%);
-  --light-grey: hsl(217, 12%, 63%);
-  --dark-blue: hsl(213, 19%, 18%);
-  --orange: hsl(25, 97%, 53%);
-  --medium-dark-blue: hsla(210, 15%, 24%, 0.644);
-}
+
 body {
   font-family: "overpass", sans-serif;
-  color: var(--light-grey);
-  background-color: var(--very-dark-blue);
+  color: hsl(217deg, 12%, 63%);
+  background-color: hsl(216deg, 12%, 8%);
   font-size: 15px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 h1 {
-  color: var(--white);
+  color: hsl(0deg, 0%, 100%);
 }
 
 .wrapper {
@@ -31,21 +24,21 @@ h1 {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  background-color: var(--dark-blue);
+  background-color: hsl(213deg, 19%, 18%);
   max-width: 350px;
   border-radius: 2rem;
   padding: 2rem;
   margin: 1.2rem;
   position: relative;
 }
-
-.wrapper > * {
+.wrapper * {
   margin-bottom: 1rem;
 }
+
 .star-logo {
   border-radius: 23px;
   padding: 1rem;
-  background-color: var(--medium-dark-blue);
+  background-color: hsla(210deg, 15%, 24%, 0.644);
 }
 
 .ratings {
@@ -56,8 +49,8 @@ h1 {
 }
 
 .numbers {
-  color: var(--light-grey);
-  background-color: var(--medium-dark-blue);
+  color: hsl(217deg, 12%, 63%);
+  background-color: hsla(210deg, 15%, 24%, 0.644);
   border: none;
   width: 3rem;
   height: 3rem;
@@ -66,14 +59,16 @@ h1 {
   font-weight: 700;
   transition: 0.6s;
 }
+
 .numbers:hover {
-  color: white;
-  background-color: var(--light-grey);
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(217deg, 12%, 63%);
   cursor: pointer;
 }
+
 .numbers:focus {
-  background-color: var(--orange);
-  color: var(--white);
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 .rating-submit {
@@ -82,24 +77,25 @@ h1 {
   border: none;
   padding: 0.8rem;
   font-weight: 700;
-  color: var(--white);
-  background-color: var(--orange);
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   transition: 0.6s;
 }
+
 .rating-submit:hover {
-  background-color: var(--white);
-  color: var(--orange);
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
   cursor: pointer;
 }
+
 .rating-submit:active {
-  background-color: var(--orange);
-  color: var(--white);
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 /* thank you message style*/
-
 .modal {
   position: absolute;
   top: 50%;
@@ -109,11 +105,12 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: var(--dark-blue);
+  background-color: hsl(213deg, 19%, 18%);
   padding: 2rem;
   border-radius: 1.5rem;
   z-index: 2;
 }
+
 .hidden {
   display: none;
 }
@@ -124,7 +121,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--very-dark-blue);
+  background-color: hsl(216deg, 12%, 8%);
   z-index: 1;
 }
 
@@ -134,12 +131,13 @@ h1 {
 }
 
 .selected {
-  background-color: var(--medium-dark-blue);
-  color: var(--orange);
+  background-color: hsla(210deg, 15%, 24%, 0.644);
+  color: hsl(25deg, 97%, 53%);
   padding: 0.5rem 0.8rem;
   border-radius: 1.5rem;
   font-weight: 400;
 }
+
 .greetings {
-  color: var(--white);
-}
+  color: hsl(0deg, 0%, 100%);
+}/*# sourceMappingURL=main.css.map */
