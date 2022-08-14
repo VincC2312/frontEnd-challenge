@@ -1,6 +1,16 @@
 @import "./reset";
 @import "./variable";
 
+@mixin theme($light-theme: true) {
+  @if $light-theme {
+    background: lighten($very-dark-blue, $amount: 50%);
+  }
+}
+
+.light {
+  @include theme($light-theme: true);
+}
+
 body {
   font-family: "overpass", sans-serif;
   color: $light-grey;
