@@ -65,15 +65,17 @@ h1 {
   font-size: 1.2rem;
   font-weight: 700;
   transition: 0.6s;
-}
-.numbers:hover {
-  color: $white;
-  background-color: $light-grey;
-  cursor: pointer;
-}
-.numbers:focus {
-  background-color: $orange;
-  color: $white;
+
+  &:hover {
+    color: $white;
+    background-color: $light-grey;
+    cursor: pointer;
+  }
+
+  &:focus {
+    background-color: $orange;
+    color: $white;
+  }
 }
 
 .rating-submit {
@@ -87,15 +89,16 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   transition: 0.6s;
-}
-.rating-submit:hover {
-  background-color: $white;
-  color: $orange;
-  cursor: pointer;
-}
-.rating-submit:active {
-  background-color: $orange;
-  color: $white;
+
+  &:hover {
+    background-color: $white;
+    color: $orange;
+    cursor: pointer;
+  }
+  &:active {
+    background-color: $orange;
+    color: $white;
+  }
 }
 
 /* thank you message style*/
@@ -113,6 +116,22 @@ h1 {
   padding: 2rem;
   border-radius: 1.5rem;
   z-index: 2;
+
+  & > * {
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+
+  & .selected {
+    background-color: $medium-dark-blue;
+    color: $orange;
+    padding: 0.5rem 0.8rem;
+    border-radius: 1.5rem;
+    font-weight: 400;
+  }
+  & .greetings {
+    color: $white;
+  }
 }
 .hidden {
   display: none;
@@ -126,20 +145,4 @@ h1 {
   height: 100%;
   background-color: $very-dark-blue;
   z-index: 1;
-}
-
-.modal > * {
-  margin-bottom: 1.2rem;
-  text-align: center;
-}
-
-.selected {
-  background-color: $medium-dark-blue;
-  color: $orange;
-  padding: 0.5rem 0.8rem;
-  border-radius: 1.5rem;
-  font-weight: 400;
-}
-.greetings {
-  color: $white;
 }
