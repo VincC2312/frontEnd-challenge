@@ -9,12 +9,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [Screenshot](#screenshot)
 - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+- [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -29,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+(/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [View here](https://www.frontendmentor.io/solutions/interactive-rating-component-solution-cymw6c95_p)
+- Live Site URL: [View here](https://interactive-rating-solution.netlify.app/)
 
 ## My process
 
@@ -48,4 +44,4 @@ Users should be able to:
 
 ## Author
 
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Twitter - [@ohn23j1](https://twitter.com/ohn23j1)
