@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-.light {
-  background: #8791a1;
-}
-
 .main {
   font-family: "overpass", sans-serif;
   color: hsl(217deg, 12%, 63%);
@@ -94,6 +90,11 @@ h1 {
 .rating-submit:active {
   background-color: hsl(25deg, 97%, 53%);
   color: hsl(0deg, 0%, 100%);
+}
+.rating-submit:disabled {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
 }
 
 /* thank you message style*/
