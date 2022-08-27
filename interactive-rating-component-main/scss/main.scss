@@ -11,7 +11,7 @@
   @include theme($light-theme: true);
 }
 
-body {
+.main {
   font-family: "overpass", sans-serif;
   color: $light-grey;
   background-color: $very-dark-blue;
@@ -20,6 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 h1 {
   color: $white;
@@ -34,8 +35,8 @@ h1 {
   max-width: 350px;
   border-radius: 2rem;
   padding: 2rem;
-  margin: 1.2rem;
-  position: relative;
+  margin: 1.5rem;
+  position: absolute;
 
   * {
     margin-bottom: 1rem;
@@ -105,15 +106,13 @@ h1 {
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 1.5rem;
   max-width: 350px;
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: $dark-blue;
-  padding: 2rem;
+  padding: 2.2rem 1.2rem;
   border-radius: 1.5rem;
   z-index: 2;
 
@@ -138,7 +137,7 @@ h1 {
 }
 
 .overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
